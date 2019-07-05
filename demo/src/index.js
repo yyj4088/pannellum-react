@@ -3,7 +3,6 @@ import { render } from 'react-dom';
 import "./index.css";
 import Header  from "./components/Header";
 import ImageDemo from "./components/ImageDemo";
-import VideoDemo from "./components/VideoDemo";
 
 
 
@@ -16,7 +15,6 @@ class Demo extends Component {
       <div className="app">
         <Header />
         <ImageDemo />
-        <VideoDemo />
       </div>
     );
   }

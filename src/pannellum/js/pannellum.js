@@ -180,21 +180,25 @@ window.pannellum = (function(window, document, undefined) {
     infoDisplay.load = {};
     infoDisplay.load.box = document.createElement('div');
     infoDisplay.load.box.className = 'pnlm-load-box';
+    infoDisplay.load.boxImage = document.createElement('img');
+    infoDisplay.load.boxImage.className = 'pnlm-load-box-img';
+    infoDisplay.load.boxImage.src = require('../css/img/vr.png');
+    infoDisplay.load.box.appendChild(infoDisplay.load.boxImage);
     infoDisplay.load.boxp = document.createElement('p');
-    infoDisplay.load.box.appendChild(infoDisplay.load.boxp);
+    // infoDisplay.load.box.appendChild(infoDisplay.load.boxp);
     infoDisplay.load.lbox = document.createElement('div');
     infoDisplay.load.lbox.className = 'pnlm-lbox';
     infoDisplay.load.lbox.innerHTML = '<div class="pnlm-loading"></div>';
-    infoDisplay.load.box.appendChild(infoDisplay.load.lbox);
+    // infoDisplay.load.box.appendChild(infoDisplay.load.lbox);
     infoDisplay.load.lbar = document.createElement('div');
     infoDisplay.load.lbar.className = 'pnlm-lbar';
     infoDisplay.load.lbarFill = document.createElement('div');
     infoDisplay.load.lbarFill.className = 'pnlm-lbar-fill';
-    infoDisplay.load.lbar.appendChild(infoDisplay.load.lbarFill);
-    infoDisplay.load.box.appendChild(infoDisplay.load.lbar);
+    // infoDisplay.load.lbar.appendChild(infoDisplay.load.lbarFill);
+    // infoDisplay.load.box.appendChild(infoDisplay.load.lbar);
     infoDisplay.load.msg = document.createElement('p');
     infoDisplay.load.msg.className = 'pnlm-lmsg';
-    infoDisplay.load.box.appendChild(infoDisplay.load.msg);
+    // infoDisplay.load.box.appendChild(infoDisplay.load.msg);
     uiContainer.appendChild(infoDisplay.load.box);
 
     // Error message
